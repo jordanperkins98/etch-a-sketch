@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const button = document.querySelector('button');
+const checkBox = document.querySelector('input');
 button.addEventListener('click', resetPage);
 
 
@@ -23,8 +24,11 @@ function makeCols(numOfCols){
 
 
 
-function draw(e){
-    console.log(this.style.setProperty('background-color', 'black'));
+function draw(){
+    let R = Math.floor(Math.random() * 256);
+    let G = Math.floor(Math.random() * 256);
+    let B = Math.floor(Math.random() * 256)
+    this.style.setProperty('background-color', `rgb(${R},${G},${B})`);
 }
 
 function resetPage(){
@@ -41,7 +45,6 @@ function promptUser(){
     }
     makeGrid(gridSize);
 }
-
 
 
 promptUser();
