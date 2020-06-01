@@ -2,9 +2,14 @@ body{
     background-color: rgb(158, 42, 42);
 }
 
+#heading{
+    margin: auto;
+    width: auto;
+}
+
 .btn{
     margin: auto;
-    width: 10%;
+    width: 25%;
     padding: 5px;
 }
 label{
